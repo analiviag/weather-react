@@ -45,7 +45,7 @@ export default function App() {
 
   if (loaded) {
     return (
-      <div>
+      <div className="App">
         {form}
 
         <ul>
@@ -60,11 +60,6 @@ export default function App() {
       </div>
     );
   } else {
-    return form;
+    return <div className="App">{form}</div>;
   }
 }
-
-<small>
-  This project was coded by Analivia Costa on{" "}
-  <a href="https://github.com/analiviag/weather-react"> Github</a>
-</small>;
